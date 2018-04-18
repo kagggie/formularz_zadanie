@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+</head>
+<body>
+     <form action="https://formspree.io/k.guzik92@gmail.com" method="POST">
+        <label for="name">Wpisz imię</label><br>   
+        <input type="text" name="name" id="name" placeholder="Imię"><br>
+        <label for="surname">Wpisz nazwisko</label><br>
+        <input type="text" name="surname" id="surname" placeholder="Nazwisko"><br>
+        <label for="email">Wpisz email</label><br>   
+        <input type="email" name="email" id="email" placeholder="Email"><br>
+        <label for="tel">Wpisz telefon</label><br>
+        <input type="tel" name="tel" id="tel" placeholder="Telefon"><br><br>
+        <label for="miasto">Wybierz miasto</label><br>
+        <select name="miasto" id="miasto">
+            <option value="krakow" selected>Kraków</option>
+            <option value="gdansk">Gdańsk</option>
+            <option value="warszawa">Warszawa</option>
+        </select><br><br>
+        <label>Wybierz płeć</label><br>
+        <label for="kobieta">Kobieta</label>
+        <input type="radio" name="radio" value="kobieta" id="kobieta" checked>
+        <label for="mezczyzna">Mężczyzna</label>
+        <input type="radio" name="radio" value="mezczyzna" id="mezczyzna"><br><br>
+        <label for="zgoda">Zgadzam się na wszystko</label>   
+        <input type="checkbox" name="zgoda" id="zgoda"><br><br>
+        <label for="msg">Wpisz wiadomość</label><br>
+        <textarea name="textarea" placeholder="Wpisz wiadomość" id="msg" maxlength="150" cols="20" rows="10"></textarea><br>
+        <input type="submit" value="Wyślij formularz">
+    </form>
+</body>
+</html>
